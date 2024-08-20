@@ -41,3 +41,10 @@ docker run -p 3000:3000 xxx
 ```
 
 项目运行在 3000 端口，在火山服务器的 /etc/nginx/conf.d 下对此端口进行了代理。（火山服务器的权限可以找算法同学添加
+```
+location /xhs-images/ {
+        alias /tiamat-vePFS/share_data/data/xiaohongshu/v1/images/;
+        dav_methods PUT;
+        create_full_put_path on;
+        autoindex on; # 允许目录索引浏览
+```
