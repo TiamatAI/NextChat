@@ -16,6 +16,8 @@ yarn dev
 
 关于这个开源项目可参考：https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web
 
+### 服务挂了如何处理
+参考：https://tiamat-x.feishu.cn/wiki/DH0UwCXBiiVfX4kv4AZc3M4wnUc
 
 ### 部署
 
