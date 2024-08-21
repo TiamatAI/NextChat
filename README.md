@@ -31,7 +31,7 @@ docker save -o chatgpt-next-web.tar chatgpt_next_web
 
 上传至火山服务器
 ```shell
-scp chatgpt-next-web.tar root@14.103.67.153:/tiamat-NAS/data/xhs_crawler/
+scp chatgpt-next-web.tar root@14.103.67.153:/tiamat-NAS/data/chatgpt_next_web/
 ```
 
 进入服务器运行
