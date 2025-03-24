@@ -7,6 +7,7 @@ import { getServerSideConfig } from "./config/server";
 const serverConfig = getServerSideConfig();
 
 export default async function App() {
+  console.log("aa");
   return (
     <>
       <Home />
