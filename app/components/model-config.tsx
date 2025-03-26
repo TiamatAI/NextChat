@@ -4,7 +4,7 @@ import {
   useAccessStore,
   useAppConfig,
 } from "../store";
-
+import React, { useEffect } from "react";
 import Locale from "../locales";
 import { InputRange } from "./input-range";
 import { ListItem, Select } from "./ui-lib";
@@ -16,8 +16,12 @@ export function ModelConfigList(props: {
   updateConfig: (updater: (config: ModelConfig) => void) => void;
 }) {
   const allModels = useAllModels();
+
   const accessStore = useAccessStore();
   const config = useAppConfig();
+  useEffect(() => {
+    config.reset();
+  }, []);
   const customModels = [config.customModels, accessStore.customModels].join(
     ",",
   );
